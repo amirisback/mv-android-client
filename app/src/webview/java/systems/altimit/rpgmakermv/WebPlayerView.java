@@ -73,7 +73,7 @@ public class WebPlayerView extends WebView {
         WebSettings webSettings = getSettings();
         webSettings.setAllowContentAccess(true);
         webSettings.setAllowFileAccess(true);
-        webSettings.setAppCacheEnabled(true);
+//        webSettings.setAppCacheEnabled(true);
         webSettings.setDatabaseEnabled(true);
         webSettings.setDatabasePath(context.getDir("database", Context.MODE_PRIVATE).getPath());
         webSettings.setDomStorageEnabled(true);
