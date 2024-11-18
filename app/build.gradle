@@ -60,7 +60,7 @@ android {
     productFlavors {
         webview {
             dimension "mv_android_client"
-            minSdk 14
+            minSdk 21
 
             buildConfigField "boolean", "BOOTSTRAP_INTERFACE", "true"
         }
@@ -68,7 +68,7 @@ android {
         // WARNING: As of February 2017 Crosswalk is no longer maintained https://crosswalk-project.org/blog/crosswalk-final-release.html
         zz_crosswalk {
             dimension "mv_android_client"
-            minSdk 16
+            minSdk 21
 
             buildConfigField "boolean", "BOOTSTRAP_INTERFACE", "true"
         }
@@ -77,6 +77,11 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        buildConfig true
+        viewBinding true
     }
 
 }
